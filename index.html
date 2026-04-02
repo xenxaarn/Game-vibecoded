@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Dash | Synthwave Endless Runner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        
+        <div id="ui-layer">
+            <div class="hud top-left">
+                <div class="label">SCORE</div>
+                <div id="score" class="value">000,000</div>
+            </div>
+            <div class="hud top-right">
+                <div class="label">MULTIPLIER</div>
+                <div id="multiplier" class="value">x1</div>
+            </div>
+            
+            <div id="start-screen" class="overlay">
+                <h1 class="glitch" data-text="NEON DASH">NEON DASH</h1>
+                <p>DOdge the obstacles. survive the pulse.</p>
+                <button id="start-button">START ENGINE</button>
+            </div>
+
+            <div id="game-over-screen" class="overlay hidden">
+                <h2 class="neon-text">CORE FAILURE</h2>
+                <div class="stats">
+                    <div>FINAL SCORE: <span id="final-score">0</span></div>
+                    <div>MAX MULTIPLIER: <span id="final-multiplier">x1</span></div>
+                </div>
+                <button id="restart-button">REBOOT</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
