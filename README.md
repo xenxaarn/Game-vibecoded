@@ -1,2 +1,2 @@
-Try it if you want 😊
+Try it if you want 🥱
 
